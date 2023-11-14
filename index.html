@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizar Texto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
+    family=Nunito:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    <h1>Analizar Texto</h1>
+
+    <main>
+        <form spellcheck="false">
+            <textarea id="userText" placeholder="Copiar texto aquí..."></textarea>
+
+            <div class="btn-group">
+                <button class="btn" type="submit">
+                    Analizar
+                </button>
+
+                <div class="space"></div>
+
+                <button class="btn" type="reset">
+                    Reiniciar
+                </button>
+            </div>
+        </form>
+
+        <div class="analysis">
+            <h2>Resultados</h2>
+
+            <div class="all-analysis">
+                <h4>
+                    caracteres : <span id="characters">0</span>
+                </h4>
+                <h4>
+                    párrafos : <span id="paragraphs">0</span>
+                </h4>
+                <h4>
+                    símbolos : <span id="symbols">0</span>
+                </h4>
+                <h4>
+                    palabras : <span id="words">0</span>
+                </h4>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
